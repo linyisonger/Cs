@@ -1,2 +1,2 @@
-# Cs
+# C#
 Some C# examples.
