@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>支付宝授权登录</title>
+</head>
+
+<body>
+    <p>授权登陆中...</p>
+    <script type="module">
+        let pDom = document.getElementsByTagName('p')[0];
+
+        let url = location.href;
+        let auth_code = url.match(/.*auth_code=(.*?)&/)?.[1];
+        let app_id = url.match(/.*app_id=(.*?)&/)?.[1];
+        if (!auth_code) location.href = `https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2021003124668446&scope=auth_user&redirect_uri=http%3A%2F%2Fa.frp.linyisonger.cn%2Findex.html&state=init`
+        let r = new XMLHttpRequest();
+        r.open("post", `${location.origin}/api/user/login`);
+        r.setRequestHeader("Content-Type", "application/json")
+        r.onloadend = () => {
+            // 重新进入页面
+            if (r.status == 500) location.href = '/index.html'
+            else if(r.status == 200) pDom.textContent = `登录成功! \n ${r.responseText}`
+        }
+        r.send(JSON.stringify({
+            code: auth_code
+        })) 
+    </script>
+
+</body>
+
+</html>
