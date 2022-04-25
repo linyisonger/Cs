@@ -5,7 +5,13 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreConnectionMySQL", "AspNetCoreConnectionMySQL\AspNetCoreConnectionMySQL.csproj", "{466759DD-7C11-4785-A53C-C1A73FF2948B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlipayWebsiteAuthorizedLogin", "AlipayWebsiteAuthorizedLogin\AlipayWebsiteAuthorizedLogin.csproj", "{4D7C2E52-4660-435D-9D50-CBFAC74266DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlipayWebsiteAuthorizedLogin", "AlipayWebsiteAuthorizedLogin\AlipayWebsiteAuthorizedLogin.csproj", "{4D7C2E52-4660-435D-9D50-CBFAC74266DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreJwtAuthorize", "AspNetCoreJwtAuthorize\AspNetCoreJwtAuthorize.csproj", "{8E736213-3A93-4905-80B7-8DDA86DDD174}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreWeChatCode2Session", "AspNetCoreWeChatCode2Session\AspNetCoreWeChatCode2Session.csproj", "{CEFFDCC4-5003-4E22-A42F-B4C14C9B6B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreWeChatSubscribeMessage", "AspNetCoreWeChatSubscribeMessage\AspNetCoreWeChatSubscribeMessage.csproj", "{6979C55C-6740-45C3-9690-A63F16F94897}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{4D7C2E52-4660-435D-9D50-CBFAC74266DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D7C2E52-4660-435D-9D50-CBFAC74266DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D7C2E52-4660-435D-9D50-CBFAC74266DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E736213-3A93-4905-80B7-8DDA86DDD174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E736213-3A93-4905-80B7-8DDA86DDD174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E736213-3A93-4905-80B7-8DDA86DDD174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E736213-3A93-4905-80B7-8DDA86DDD174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEFFDCC4-5003-4E22-A42F-B4C14C9B6B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFFDCC4-5003-4E22-A42F-B4C14C9B6B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFFDCC4-5003-4E22-A42F-B4C14C9B6B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFFDCC4-5003-4E22-A42F-B4C14C9B6B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6979C55C-6740-45C3-9690-A63F16F94897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6979C55C-6740-45C3-9690-A63F16F94897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6979C55C-6740-45C3-9690-A63F16F94897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6979C55C-6740-45C3-9690-A63F16F94897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

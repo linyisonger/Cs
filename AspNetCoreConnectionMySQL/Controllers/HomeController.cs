@@ -23,7 +23,7 @@ namespace AspNetCoreConnectionMySQL.Controllers
 
         // GET api/<HomeController>/5
         [HttpGet("{id}")]
-        public User Get(int id)
+        public User? Get(int id)
         {
             return _context.Users.Find(id);
         }
@@ -40,8 +40,12 @@ namespace AspNetCoreConnectionMySQL.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            _context.Users.Remove(Get(id));
-            _context.SaveChanges();
+            var user = Get(id);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                _context.SaveChanges();
+            }
         }
     }
 }
